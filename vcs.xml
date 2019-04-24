@@ -10,4 +10,7 @@
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/CLionProjects" />
   </component>
+  <component name="VcsApplicationSettings">
+    <option name="MANAGE_IGNORE_FILES" value="true" />
+  </component>
 </application>

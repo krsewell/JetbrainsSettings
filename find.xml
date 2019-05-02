@@ -1,7 +1,7 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="Project 'FileClient'" />
-    <option name="defaultScopeName" value="Project 'FileClient'" />
-    <option name="SEARCH_SCOPE" value="Project 'FileClient'" />
+    <option name="customScope" value="File '.../src/Procedure.h'" />
+    <option name="defaultScopeName" value="File '.../src/Procedure.h'" />
+    <option name="SEARCH_SCOPE" value="File '.../src/Procedure.h'" />
   </component>
 </application>

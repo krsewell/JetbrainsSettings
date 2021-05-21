@@ -1,0 +1,26 @@
+<templateSet group="C/C++">
+  <template name="t_exc" value="TEST($SUITE$, $TEST_CASE$) {&#10;try {&#10;  $FUNC$($ARGS$);&#10;  FAIL() &lt;&lt; &quot;Expected $EXCEPTION$&quot;;&#10;} catch(const $COPY_EXCEPTION$ &amp;err) {&#10;  EXPECT_EQ(err.what(), std::string(&quot;$EXCEPT_MSG$&quot;));&#10;} catch(...) {&#10;  FAIL() &lt;&lt; &quot;Wrong exception type thrown&quot;;&#10;}&#10;}" description="Testing for Exception Thrown" toReformat="false" toShortenFQNames="true">
+    <variable name="SUITE" expression="" defaultValue="DefaultSuite" alwaysStopAt="true" />
+    <variable name="TEST_CASE" expression="" defaultValue="Some_Test_Case" alwaysStopAt="true" />
+    <variable name="FUNC" expression="methodName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXCEPTION" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="COPY_EXCEPTION" expression="EXCEPTION" defaultValue="" alwaysStopAt="false" />
+    <variable name="EXCEPT_MSG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="cpp" value="true" />
+    </context>
+  </template>
+  <template name="t_all" value="TEST($SUITE$, $TEST_CASE$) {&#10;  $CONTAINER_TYPE$ $CONTAINER${$ARGS$};&#10;  for ($AUTO_TYPE$ $VAR$ : $CONTAINER$) {&#10;    $END$&#10;  }&#10;}" toReformat="false" toShortenFQNames="true">
+    <variable name="SUITE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEST_CASE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTAINER_TYPE" expression="variableOfType()" defaultValue="std::array" alwaysStopAt="true" />
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="AUTO_TYPE" expression="autoTypeForRangedForLoop()" defaultValue="auto" alwaysStopAt="true" />
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="item" alwaysStopAt="true" />
+    <variable name="CONTAINER" expression="variableForIteration()" defaultValue="x" alwaysStopAt="true" />
+    <context>
+      <option name="cpp" value="true" />
+    </context>
+  </template>
+</templateSet>

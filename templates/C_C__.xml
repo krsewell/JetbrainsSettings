@@ -11,7 +11,7 @@
       <option name="cpp" value="true" />
     </context>
   </template>
-  <template name="t_all" value="TEST($SUITE$, $TEST_CASE$) {&#10;  $CONTAINER_TYPE$ $CONTAINER${$ARGS$};&#10;  for ($AUTO_TYPE$ $VAR$ : $CONTAINER$) {&#10;    $END$&#10;  }&#10;}" toReformat="false" toShortenFQNames="true">
+  <template name="t_all" value="TEST($SUITE$, $TEST_CASE$) {&#10;  $CONTAINER_TYPE$ $CONTAINER${$ARGS$};&#10;  for ($AUTO_TYPE$ $VAR$ : $CONTAINER$) {&#10;    $END$&#10;  }&#10;}" description="" toReformat="false" toShortenFQNames="true">
     <variable name="SUITE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="TEST_CASE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="CONTAINER_TYPE" expression="variableOfType()" defaultValue="std::array" alwaysStopAt="true" />

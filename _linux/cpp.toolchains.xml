@@ -2,7 +2,7 @@
   <component name="CPPToolchains" version="4">
     <toolchains detectedVersion="5">
       <toolchain name="Default" toolSetKind="SYSTEM_UNIX_TOOLSET" customCMakePath="/usr/bin/cmake" customCXXCompilerPath="/usr/bin/g++" debuggerKind="CUSTOM_GDB" customGDBPath="/usr/bin/gdb" />
-      <toolchain name="LLVM" toolSetKind="SYSTEM_UNIX_TOOLSET" customCMakePath="/usr/bin/cmake" customCCompilerPath="/usr/bin/clang" customCXXCompilerPath="/usr/bin/clang++" debuggerKind="CUSTOM_GDB" customGDBPath="/usr/bin/lldb" />
+      <toolchain name="LLVM" toolSetKind="SYSTEM_UNIX_TOOLSET" customCMakePath="/usr/bin/cmake" customCCompilerPath="/usr/bin/clang" customCXXCompilerPath="/usr/bin/clang++" debuggerKind="CUSTOM_GDB" customGDBPath="/usr/bin/gdb" />
     </toolchains>
   </component>
 </application>
